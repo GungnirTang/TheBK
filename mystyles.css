@@ -1,0 +1,190 @@
+/* mystyles.css — Black Knight Theme */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ── CSS Variables ── */
+:root {
+  --dark:       #1a1410;
+  --dark2:      #2a2018;
+  --gold:       #c9a84c;
+  --gold-light: #e8c96a;
+  --red:        #8b1a1a;
+  --text-light: #e8dcc8;
+  --text-muted: #a89880;
+}
+
+/* ── Base ── */
+body {
+  background-color: var(--dark);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    );
+  color: var(--text-light);
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Navbar div ── */
+#navbar {
+  background-color: var(--dark2);
+  border-bottom: 2px solid var(--gold);
+  padding: 14px 32px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#navbar a {
+  color: var(--gold);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+#navbar a:hover {
+  color: var(--gold-light);
+}
+
+/* ── Hero div ── */
+#hero {
+  text-align: center;
+  padding: 48px 24px 32px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+#hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 16px rgba(201,168,76,0.3);
+  margin: 0 0 16px;
+}
+
+#hero img {
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+  margin-top: 16px;
+}
+
+/* ── Content div ── */
+#content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ── Headings ── */
+h1 {
+  font-family: 'Cinzel', serif;
+  color: var(--gold);
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+  border-left: 3px solid var(--red);
+  padding-left: 12px;
+  margin-top: 40px;
+}
+
+/* ── Lists ── */
+ol {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+ol > li {
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+ul li {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px;
+  color: var(--text-light);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+ul li img {
+  display: block;
+  margin-top: 8px;
+  border: 1px solid rgba(201,168,76,0.4);
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+ol > li > img {
+  display: block;
+  margin-top: 10px;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+/* ── iframe ── */
+iframe {
+  display: block;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+  margin: 16px 0;
+  max-width: 100%;
+}
+
+/* ── Link ── */
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+/* ── Learn More link ── */
+.learn-more {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: background 0.2s, color 0.2s;
+}
+
+.learn-more:hover {
+  background: var(--gold);
+  color: var(--dark);
+  text-decoration: none;
+}
